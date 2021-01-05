@@ -93,15 +93,15 @@ app.get('/api/exercise/log', (request, response)=>{
       let responseObject = result
 
       if(request.query.from || request.query.to){
-        let fromDate = newDate(0) // from jan 1 1970 , the lowest date
-        let toDate = newDate()
+        let fromDate = new Date(0) // from jan 1 1970 , the lowest date
+        let toDate = new Date()
 
         if(request.query.from){
-          fromDate = newDate(request.query.from)
+          fromDate = new Date(request.query.from)
         }
 
         if(request.query.to){
-          toDate = newDate(request.query.to)
+          toDate = new Date(request.query.to)
         }
 
         fromDate = fromDate.getTime()
