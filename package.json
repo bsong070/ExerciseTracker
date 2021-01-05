@@ -23,7 +23,7 @@
 		"tape": "^4.7.0"
 	},
 	"repository": {
-		"url": "https://github.com/freeCodeCamp/boilerplate-project-exercisetracker"
+		"url": "https://github.com/bsong070/ExerciseTracker.git"
 	},
 	"license": "MIT",
 	"keywords": [
