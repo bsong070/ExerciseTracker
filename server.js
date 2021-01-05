@@ -115,7 +115,7 @@ app.get('/api/exercise/log', (request, response)=>{
       }
 
       if(request.query.limit){
-        responseObject.log = responseObject.log.slice(0,request.query.limit)
+        responseObject.log = responseObject.log.slice(0,request.query.limit);
       }
 
       responseObject = responseObject.toJSON() //makes responseObject modifiable
